@@ -8,11 +8,11 @@ public class Main {
         ArrayList<Photo> vPhotos = new ArrayList<>();
         ArrayList<Integer[]> slides = new ArrayList<>();
 
-//        String filename = "a_example";
-//        String filename = "b_lovely_landscapes";
-        String filename = "c_memorable_moments";
-//        String filename = "d_pet_pictures";
-//        String filename = "e_shiny_selfies";
+//        String filename = "a_example"; // just a few seconds
+        String filename = "b_lovely_landscapes"; // takes more than an hour
+//        String filename = "c_memorable_moments";
+//        String filename = "d_pet_pictures"; //takes almost an hour to process
+//        String filename = "e_shiny_selfies"; //takes about a minute
 
         ArrayList<ArrayList<Photo>> hv = readPhotos(filename +".txt",hPhotos,vPhotos);
         ArrayList<Photo> horizontal = hOrder(hv.get(0));
